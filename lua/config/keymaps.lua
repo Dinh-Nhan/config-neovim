@@ -45,3 +45,8 @@ keymaps.set("n", "<C-w><down>", "<C-w>-")
 keymaps.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+
+-- Terminal
+keymaps.set("n", "<C-/>", ":terminal<Return>", opts)
+keymaps.set("t", "<C-/>", "<C-\\><C-n>:q<Return>", opts)
+keymaps.set("t", "<Esc><Esc>", "<C-\\><C-n>", opts)

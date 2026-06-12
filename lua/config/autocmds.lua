@@ -21,3 +21,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.wo.conceallevel = 0
   end,
 })
+
+-- Open diagnostic float with gl
+vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Show diagnostic" })
